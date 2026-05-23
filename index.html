@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bargains24Hrs - Start Your Online Income Today</title>
+  <!-- A clean, modern Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e9edf2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    /* Main Card */
+    .card {
+      background: white;
+      border-radius: 2rem;
+      box-shadow: 0 25px 45px -12px rgba(0,0,0,0.25);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    /* Header with Bargains24Hrs vibe */
+    .header {
+      background: #1a1f2c;
+      padding: 1.8rem 2rem;
+      text-align: center;
+      border-bottom: 3px solid #f5b042;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: white;
+    }
+
+    .logo span {
+      color: #f5b042;
+    }
+
+    .tagline {
+      color: #a0a7b8;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    /* Main content */
+    .content {
+      padding: 2.5rem 2rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #fef2e0;
+      color: #c47a00;
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 0.3rem 0.9rem;
+      border-radius: 30px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #1a1f2c;
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      color: #f5b042;
+      background: linear-gradient(120deg, #fef7e0 0%, #fef7e0 40%, transparent 60%);
+      padding: 0 0.2rem;
+    }
+
+    .subhead {
+      font-size: 1.2rem;
+      color: #4a5568;
+      margin-bottom: 2rem;
+      line-height: 1.4;
+      border-left: 3px solid #f5b042;
+      padding-left: 1rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .feature-item {
+      background: #f8fafc;
+      padding: 1rem 1.2rem;
+      border-radius: 1rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .feature-item:before {
+      content: "✓";
+      color: #f5b042;
+      font-weight: 800;
+      font-size: 1.3rem;
+    }
+
+    .price-section {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .price-old {
+      font-size: 1.2rem;
+      color: #64748b;
+      text-decoration: line-through;
+    }
+
+    .price-new {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #1a1f2c;
+    }
+
+    .price-small {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #f5b042;
+      color: #1a1f2c;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 1rem 2.5rem;
+      border-radius: 60px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 10px 20px -8px rgba(245,176,66,0.4);
+      margin: 1rem 0 0.5rem;
+    }
+
+    .cta-button:hover {
+      background: #e09d28;
+      transform: translateY(-2px);
+      box-shadow: 0 20px 25px -12px rgba(245,176,66,0.5);
+    }
+
+    .guarantee {
+      font-size: 0.85rem;
+      color: #5b6e8c;
+      margin-top: 1rem;
+    }
+
+    /* Email form */
+    .email-section {
+      margin: 2rem 0 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    .email-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .email-input {
+      flex: 2;
+      padding: 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .email-button {
+      background: #1a1f2c;
+      color: white;
+      border: none;
+      padding: 1rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .email-button:hover {
+      background: #2d3748;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #7c8ba0;
+      padding: 1.5rem 2rem;
+      background: #fcfdfe;
+      border-top: 1px solid #ecf3f9;
+    }
+
+    @media (max-width: 640px) {
+      .content { padding: 1.8rem; }
+      h1 { font-size: 1.8rem; }
+      .price-new { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="header">
+      <div class="logo">Bargains<span>24Hrs</span></div>
+      <div class="tagline">Daily digital deals • Real results</div>
+    </div>
+
+    <div class="content">
+      <div class="badge">🔥 LIMITED BARGAIN — TODAY ONLY</div>
+      <h1>Complete Step‑by‑Step Program:<br> <span class="highlight">Make Money With The Internet</span> (Even From Your Phone)</h1>
+      <div class="subhead">No fluff. No fake guru promises. Just a proven roadmap + PLR products you can instantly resell for 100% profit.</div>
+
+      <div class="features">
+        <div class="feature-item">Zero tech skills needed</div>
+        <div class="feature-item">Work from your phone</div>
+        <div class="feature-item">PLR resell rights included</div>
+        <div class="feature-item">Step‑by‑step video & checklist</div>
+      </div>
+
+      <div class="price-section">
+        <div class="price-old">Regular price: $97</div>
+        <div class="price-new">$19 <span class="price-small">one time</span></div>
+        <div class="guarantee">⭐ 7‑Day “Make Your Money Back” Guarantee • Instant Access</div>
+        <div>
+          <!-- Replace the # with your actual payment link (Gumroad, Dodo, etc.) -->
+          <a href="#" class="cta-button">👉 GET INSTANT ACCESS NOW 👈</a>
+        </div>
+        <div class="guarantee">✔︎ Includes resell rights ✔︎ Lifetime updates</div>
+      </div>
+
+      <div class="email-section">
+        <strong>📩 Want a free mini‑training first?</strong> Get 3 proven phone money ideas + a discount code.
+        <form class="email-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="email" name="email" class="email-input" placeholder="Your email address" required>
+          <button type="submit" class="email-button">Send Free Guide →</button>
+        </form>
+        <p style="font-size: 0.7rem; margin-top: 0.5rem;">No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2025 Bargains24Hrs — Digital Bargains That Disappear in 24 Hours<br>
+      This site is not part of Facebook or Google. Results vary based on effort.
+    </div>
+  </div>
+</div>
+</body>
+</html>
