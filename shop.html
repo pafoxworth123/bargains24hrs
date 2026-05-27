@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Bargains24Hrs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #1a1f2c;
+    }
+    .logo span {
+      color: #f5b042;
+    }
+    .header p {
+      color: #4a5568;
+      margin-top: 0.5rem;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .product-card {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .product-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #1a1f2c;
+    }
+    .product-description {
+      color: #4a5568;
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+      line-height: 1.4;
+    }
+    .product-price {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #f5b042;
+      margin: 1rem 0;
+    }
+    .buy-button {
+      display: inline-block;
+      background: #1a1f2c;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      width: 100%;
+      text-align: center;
+      transition: background 0.2s;
+    }
+    .buy-button:hover {
+      background: #f5b042;
+      color: #1a1f2c;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #7c8ba0;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: #f5b042;
+    }
+    hr {
+      margin: 2rem 0;
+      border: none;
+      border-top: 1px solid #e2e8f0;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #7c8ba0;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo">Bargains<span>24Hrs</span></div>
+    <p>Digital bargains that disappear in 24 hours</p>
+  </div>
+
+  <div class="products-grid">
+    
+    <!-- PRODUCT 1: Canva Covers -->
+    <div class="product-card">
+      <div class="product-title">📚 10 Editable Children's Book Covers</div>
+      <div class="product-description">Professional Canva templates for children's books. Commercial license included. Edit, download, and publish on Amazon KDP or Etsy.</div>
+      <div class="product-price">$12</div>
+      <a href="https://pafox.gumroad.com/l/lypznm" class="buy-button" target="_blank">Buy Now →</a>
+    </div>
+
+    <!-- PRODUCT 2: Coming Soon (Template - Uncomment and edit when ready) -->
+    <!--
+    <div class="product-card">
+      <div class="product-title">🎨 Your Next Product Name</div>
+      <div class="product-description">Short description of what the product does and who it's for.</div>
+      <div class="product-price">$19</div>
+      <a href="YOUR_GUMROAD_LINK" class="buy-button" target="_blank">Buy Now →</a>
+    </div>
+    -->
+
+  </div>
+
+  <div style="text-align: center;">
+    <a href="https://bargains24hrs.com" class="back-link">← Back to Home</a>
+  </div>
+
+  <div class="footer">
+    © 2025 Bargains24Hrs — Digital Bargains That Disappear in 24 Hours
+  </div>
+</div>
+</body>
+</html>
