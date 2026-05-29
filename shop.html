@@ -38,7 +38,7 @@
     }
     .products-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
       gap: 2rem;
       margin: 2rem 0;
     }
@@ -52,6 +52,11 @@
     .product-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .product-image {
+      width: 100%;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
     }
     .product-title {
       font-size: 1.25rem;
@@ -96,11 +101,6 @@
     .back-link:hover {
       color: #f5b042;
     }
-    hr {
-      margin: 2rem 0;
-      border: none;
-      border-top: 1px solid #e2e8f0;
-    }
     .footer {
       text-align: center;
       font-size: 0.8rem;
@@ -119,25 +119,23 @@
   </div>
 
   <div class="products-grid">
-    
-    <!-- PRODUCT 1: Canva Covers -->
+
+    <!-- PRODUCT 1: Coloring Business (Main Product) -->
     <div class="product-card">
-      <img src="ocean theme coloring book cover.png" alt="Children's Book Covers" style="width:100%; border-radius:0.5rem; margin-bottom:1rem;">
+      <img src="mock-00001-24954.png" alt="Coloring Pages Publishing Business" class="product-image">
+      <div class="product-title">🎨 Coloring Pages Publishing Business</div>
+      <div class="product-description">Complete white label system. Amazon + Etsy guides, hundreds of coloring pages, 50+ social graphics, full resale rights.</div>
+      <div class="product-price">$27</div>
+      <a href="https://pafox.gumroad.com/l/esihul" class="buy-button" target="_blank">Buy Now →</a>
+    </div>
+
+    <!-- PRODUCT 2: Canva Covers -->
+    <div class="product-card">
       <div class="product-title">📚 10 Editable Children's Book Covers</div>
       <div class="product-description">Professional Canva templates for children's books. Commercial license included. Edit, download, and publish on Amazon KDP or Etsy.</div>
       <div class="product-price">$12</div>
       <a href="https://pafox.gumroad.com/l/lypznm" class="buy-button" target="_blank">Buy Now →</a>
     </div>
-
-    <!-- PRODUCT 2: Coming Soon (Template - Uncomment and edit when ready) -->
-    <!--
-    <div class="product-card">
-      <div class="product-title">🎨 Your Next Product Name</div>
-      <div class="product-description">Short description of what the product does and who it's for.</div>
-      <div class="product-price">$19</div>
-      <a href="YOUR_GUMROAD_LINK" class="buy-button" target="_blank">Buy Now →</a>
-    </div>
-    -->
 
   </div>
 
